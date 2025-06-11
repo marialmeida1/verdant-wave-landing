@@ -96,6 +96,15 @@
   }
 }
 
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -129,6 +138,10 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
 }
 
 .animate-fadeInUp {
