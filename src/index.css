@@ -96,12 +96,12 @@
   }
 }
 
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-3deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(3deg);
   }
 }
 
@@ -140,8 +140,8 @@
   animation: float 6s ease-in-out infinite;
 }
 
-.animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
+.animate-swing {
+  animation: swing 4s ease-in-out infinite;
 }
 
 .animate-fadeInUp {
